@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Enable your user to enter a city + country and return the temperature in Fahrenheit">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Weather API</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+	<body>
+
+		<h1>Which city's weather should we investigate?</h1>
+
+		<section id="completeForm">
+			<input type="text" id="whatCity" value="" placeholder="City">
+			<input type="text" id="whatCounty" value="" placeholder="County">
+			<input type="text" id="whatState" value="" placeholder="State">
+			<input type="text" id="whatCountry" value="" placeholder="Country">
+			<button type="button" name="button">Get Weather</button>
+		</section>
+
+		<div id="cityDiv">
+			<h2>Name of City</h2>
+			<span id="city"></span>
+		</div>
+
+		<div id="weatherDiv">
+			<h3>Temperature:</h3>
+			<span id="temperature"></span>
+			<h3>Weather:</h3>
+			<span id="weatherCode"></span>
+			<h3>Wind Speed:</h3>
+			<span id="windSpeed"></span>
+			<h3>Wind Direction:</h3>
+			<span id="windDirection"></span>
+		</div>
+
+		<script type="text/javascript" src="./js/main.js"></script>
+	</body>
+</html>
